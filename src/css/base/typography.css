@@ -1,32 +1,59 @@
-body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  color: var(--color-text-light);
-  background-color: var(--color-brown);
-  line-height: 1.5;
+/* Fonts: Harmattan (body), Mulish (buttons), Albertus Nova (headings) */
+/* Import Harmattan & Mulish from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Harmattan:wght@300;400;700&family=Mulish:wght@400;700&display=swap');
+
+/* Albertus Nova - add .woff/.woff2 files into assets/fonts/ and update paths if needed */
+@font-face {
+  font-family: 'Albertus Nova';
+  src: url('../../assets/fonts/AlbertusNova-Regular.woff2') format('woff2'),
+       url('../../assets/fonts/AlbertusNova-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Albertus Nova';
+  src: url('../../assets/fonts/AlbertusNova-Bold.woff2') format('woff2'),
+       url('../../assets/fonts/AlbertusNova-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 
+body {
+  font-family: 'Harmattan', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--color-text-light);
+  background-color: var(--color-brown);
+  line-height: 1.6;
+}
+
+/* Headings: Albertus Nova (display) */
 h1,
 h2,
-h3 {
-  font-family: "Georgia", "Times New Roman", serif;
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Albertus Nova', Georgia, "Times New Roman", serif;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
   margin: 0;
+  font-weight: 700;
 }
 
 h1 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-align: center;
   margin-bottom: 1.5rem;
 }
 
 h2 {
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   margin: 1.75rem 0 0.75rem;
 }
 
 h3 {
-  font-size: 1rem;
+  font-size: 1.1rem;
   margin: 1.25rem 0 0.5rem;
 }
 
@@ -35,4 +62,23 @@ p {
   margin: 0 0 1rem;
 }
 
+/* Buttons and CTAs: Mulish */
+button,
+.voir-plus,
+.carousel-cta,
+.menu-toggle,
+.lang-toggle,
+a.button {
+  font-family: 'Mulish', Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* Small accessibility improvement - visible focus */
+button:focus,
+a:focus {
+  outline: 3px solid rgba(0,0,0,0.12);
+  outline-offset: 2px;
+}
 

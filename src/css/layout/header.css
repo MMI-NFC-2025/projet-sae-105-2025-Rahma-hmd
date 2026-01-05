@@ -1,4 +1,5 @@
 header {
+  position: relative;
   background-color: var(--color-beige);
   color: var(--color-text-dark);
   display: flex;
@@ -7,7 +8,44 @@ header {
   padding: 0.75rem 1.25rem;
 }
 
-header button {
+.logo {
+  position: absolute;
+  left: 50%;
+  top: 42%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+
+.logo-small {
+  width: 140px;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 480px) {
+  .logo-small {
+    width: 96px;
+  }
+  .logo {
+    top: 46%;
+  }
+}
+
+.menu-toggle img,
+.lang-toggle img {
+  display: block;
+  width: 40px;
+  height: auto;
+}
+
+@media (max-width: 480px) {
+  .menu-toggle img,
+  .lang-toggle img {
+    width: 28px;
+  }
+}header button {
   background: transparent;
   border-radius: 999px;
   border: 1px solid var(--color-text-dark);
@@ -15,6 +53,17 @@ header button {
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
+}
+
+/* Icon buttons (menu / language) */
+.menu-toggle,
+.lang-toggle {
+  border: none;
+  padding: 0.25rem;
+  background: transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .logo {
@@ -35,12 +84,20 @@ header button {
 }
 
 .menu-toggle {
-  width: 2rem;
-  height: 2rem;
+  min-width: 40px;
+  min-height: 40px;
+  padding: 0.25rem;
   font-size: 1.1rem;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (max-width: 480px) {
+  .menu-toggle {
+    min-width: 28px;
+    min-height: 28px;
+  }
 }
 
 

@@ -95,9 +95,9 @@ footer a:focus {
   filter: brightness(1.05);
 }
 
-.footer-left .footer-small-logo {
+.footer .footer-small-logo {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   margin-bottom: 1rem;
 }
 
