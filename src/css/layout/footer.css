@@ -109,7 +109,7 @@ footer a:focus {
 
 .footer-credits {
   margin-top: 2rem;
-  font-size: 4px;
+  font-size: 0.6rem;
   line-height: 1.1;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -137,3 +137,4 @@ footer a:focus {
     width: 1.6rem;
   }
 }
+
