@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galerie - L'Effet Matilda</title>
+    <title>Page non trouvée - L'Effet Matilda</title>
     <link rel="stylesheet" href="../src/css/style.css">
 </head>
 <body>
@@ -44,55 +44,13 @@
     </nav>
 
     <main>
-        <section class="galerie-page">
-            <h1>GALERIE</h1>
-
-            <img loading="lazy" src="../assets/img/galeriehero.avif" alt="Écrans de cinéma en noir et blanc" class="galerie-hero" />
+        <section class="page404">
+            <h1>404</h1>
+            <h2>Page non trouvée</h2>
+            <p>La page que vous recherchez n'existe pas ou a été déplacée.</p>
+            <p class="redirect-message">Vous allez être redirigé vers la page d'accueil dans <span id="countdown">5</span> secondes...</p>
+            <a href="index.html" class="btn-404">RETOURNER À L'ACCUEIL</a>
         </section>
-
-        <section class="galerie-films">
-            <h2>LES FILMS</h2>
-
-            <article>
-                <h3>THE BALL METHOD (2020)</h3>
-                <p><strong>Réalisateur :</strong> Dagmawi Abebe</p>
-                <p>Court métrage retraçant la vie d'Alice Ball, chimiste afro-américaine qui met au point le premier traitement efficace contre la lèpre. En seulement six minutes, le film redonne à cette pionnière la reconnaissance qu'elle mérite et illustre parfaitement l'Effet Matilda.</p>
-                <img loading="lazy" src="../assets/img/galerie1.avif" alt="Affiche du film The Ball Method" />
-                <p><a href="https://www.amazon.com/Ball-Method-Kiersey-Clemons/dp/B08SWKTDWK" class="btn-film" target="_blank" rel="noopener noreferrer">REGARDER LE FILM</a></p>
-            </article>
-
-            <article>
-                <h3>LES FIGURES DE L'OMBRE (2016)</h3>
-                <p><strong>Réalisateur :</strong> Theodore Melfi</p>
-                <p>Inspiré d'une histoire vraie, le film met en lumière trois mathématiciennes afro-américaines de la NASA, dont les calculs ont permis les missions spatiales d'Apollo. Un récit poignant sur la persévérance et la reconnaissance des femmes noires dans les sciences.</p>
-                <img loading="lazy" src="../assets/img/galerie2.avif" alt="Affiche du film Les Figures de l'Ombre" />
-                <p><a href="https://www.disneyplus.com/fr-fr/browse/entity-bd9d3f07-aefe-4e45-b421-ad2a745c3bb0?distributionPartner=google" class="btn-film" target="_blank" rel="noopener noreferrer">REGARDER LE FILM</a></p>
-            </article>
-        </section>
-
-        <section class="galerie-livres">
-            <h2>LES LIVRES</h2>
-
-            <article>
-                <h3>HISTOIRE DES LÉPREUX AU MOYEN ÂGE : UNE SOCIÉTÉ D'EXCLUS</h3>
-                <p><strong>Auteure :</strong> Françoise Bériac</p>
-                <p>Étude historique sur la marginalisation des malades dans la société médiévale. Ce livre éclaire en parallèle l'histoire d'Alice Ball, dont les découvertes ont concerné la même maladie mais dans un contexte de discrimination et d'exclusion sociale.</p>
-                <img loading="lazy" src="../assets/img/galerie3.avif" alt="Couverture du livre Histoire des lépreux au Moyen Âge" />
-                <p><a href="https://www.fnac.com/a1075804/Francoise-Beriac-Histoire-des-lepreux-au-moyen-age?NUMERICAL=Y&Origin=fnac_google#FORMAT=ebook%20(ePub)" class="btn-livre" target="_blank" rel="noopener noreferrer">LIRE LE LIVRE</a></p>
-            </article>
-
-            <article>
-                <h3>AUDACIEUSES ! 10 FEMMES QUI ONT MARQUÉ LES SCIENCES</h3>
-                <p><strong>Autrices :</strong> Leïla Brient, Romane Colignon, Lucie Croes</p>
-                <p>Dix portraits inspirants de femmes scientifiques qui ont changé notre vision du monde, parmi elles Alice Ball, mais aussi Marie Curie, Katherine Johnson et Rosalind Franklin. Le livre montre comment leurs découvertes ont révolutionné leurs domaines, tout en soulignant les injustices et les oublis liés à leur genre.</p>
-                <img loading="lazy" src="../assets/img/galerie4.avif" alt="Couverture du livre Audacieuses ! 10 femmes qui ont marqué les sciences" />
-                <p><a href="https://www.fnac.com/a21136697/Leila-Bessila-Audacieuses" class="btn-livre" target="_blank" rel="noopener noreferrer">LIRE LE LIVRE</a></p>
-            </article>
-        </section>
-
-        <div class="galerie-conclusion">
-            <p>Ces films et ces livres ont un point commun : ils redonnent une voix à celles que l'Histoire a réduites au silence. À travers le cinéma et l'écriture, la mémoire devient un acte de justice, une manière de dire, enfin : elles étaient là.</p>
-        </div>
     </main>
 
     <footer>
@@ -152,5 +110,31 @@
     </footer>
 
     <script src="../src/js/script.js" defer></script>
+    <script>
+        // Compte à rebours et redirection automatique
+        let countdown = 5;
+        const countdownElement = document.getElementById('countdown');
+        const redirectMessage = document.querySelector('.redirect-message');
+
+        const timer = setInterval(function() {
+            countdown--;
+            if (countdownElement) {
+                countdownElement.textContent = countdown;
+            }
+            
+            if (countdown <= 0) {
+                clearInterval(timer);
+                window.location.href = 'index.html';
+            }
+        }, 1000);
+
+        // Redirection immédiate si l'utilisateur clique sur le bouton
+        document.querySelector('.btn-404')?.addEventListener('click', function(e) {
+            e.preventDefault();
+            clearInterval(timer);
+            window.location.href = 'index.html';
+        });
+    </script>
 </body>
 </html>
+

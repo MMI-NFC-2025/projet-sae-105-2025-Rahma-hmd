@@ -1,0 +1,81 @@
+/* PAGE 404 */
+.page404 {
+  max-width: 28rem;
+  margin: 0 auto;
+  padding: 4rem 1.5rem 3rem;
+  text-align: center;
+}
+
+.page404 h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  color: var(--color-beige);
+  margin: 0 0 1rem;
+  line-height: 1;
+}
+
+.page404 h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-text-light);
+  margin: 0 0 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.page404 p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--color-text-light);
+  margin: 0 0 1rem;
+}
+
+.redirect-message {
+  font-size: 0.9rem;
+  color: var(--color-beige);
+  margin: 1.5rem 0 2rem !important;
+}
+
+#countdown {
+  font-weight: 700;
+  color: var(--color-beige);
+}
+
+.btn-404 {
+  display: inline-block;
+  padding: 0.6rem 1.7rem;
+  border-radius: 0;
+  border: 2px solid #ffffff;
+  background-color: #ffffff;
+  color: var(--color-brown);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  text-decoration: none;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.btn-404:hover {
+  background-color: var(--color-beige);
+  border-color: var(--color-beige);
+  color: var(--color-text-dark);
+}
+
+@media (min-width: 768px) {
+  .page404 {
+    max-width: 32rem;
+    padding-inline: 4rem;
+    padding-top: 6rem;
+  }
+
+  .page404 h1 {
+    font-size: 6rem;
+  }
+
+  .page404 h2 {
+    font-size: 2rem;
+  }
+}
+
