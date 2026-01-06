@@ -93,7 +93,7 @@ main>article img {
   border: 6px solid var(--color-beige);
   box-shadow: 0 18px 30px rgba(0, 0, 0, 0.35);
   overflow: hidden;
-} 
+}
 
 .hero img {
   width: 100%;
