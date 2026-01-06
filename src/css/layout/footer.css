@@ -101,6 +101,11 @@ footer a:focus {
   margin-bottom: 1rem;
 }
 
+.footer-small-logo a {
+  display: block;
+  text-decoration: none;
+}
+
 .footer-small-logo img {
   width: 96px;
   height: auto;

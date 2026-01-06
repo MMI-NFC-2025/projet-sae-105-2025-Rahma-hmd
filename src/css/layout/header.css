@@ -18,6 +18,11 @@ header {
   justify-content: center;
 }
 
+.logo a {
+  display: block;
+  text-decoration: none;
+}
+
 .logo-small {
   width: 140px;
   height: auto;
