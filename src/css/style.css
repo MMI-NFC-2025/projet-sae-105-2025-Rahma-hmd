@@ -12,7 +12,6 @@
 
 /* Layout */
 @import url("layout/header.css");
-@import url("layout/hero.css");
 @import url("layout/menu.css");
 @import url("layout/footer.css");
 
@@ -21,16 +20,7 @@
 @import url("components/section.css");
 @import url("components/article.css");
 @import url("components/carrousel.css");
-@import url("components/liste.css");
-@import url("components/cardequipe.css");
-@import url("components/artistes.css");
-@import url("components/templateartiste.css");
-@import url("components/pricing.css");
-@import url("components/hebergements.css");
-@import url("components/contact.css");
 @import url("components/formulaire.css");
-@import url("components/scene.css");
 @import url("components/page404.css");
-@import url("components/filters.css");
 @import url("components/frise.css");
 
