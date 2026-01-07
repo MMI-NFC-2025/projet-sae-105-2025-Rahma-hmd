@@ -104,20 +104,12 @@ main>article img {
 
 .hero figcaption,
 figure figcaption {
-  font-size: 0.85rem;
-  color: var(--color-text-light);
-  text-align: center;
-  font-style: italic;
-  margin-top: 0.5rem;
-  padding: 0 0.5rem;
+  display: none;
 }
 
 .galerie-films figure figcaption,
 .galerie-livres figure figcaption {
-  color: var(--color-text-light);
-  font-size: 0.85rem;
-  margin-top: 0.5rem;
-  margin-bottom: 1rem;
+  display: none;
 }
 
 .lead {
