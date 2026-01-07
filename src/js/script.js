@@ -238,10 +238,42 @@
         }
     }
 
+    function initPage404() {
+        // Compte à rebours et redirection automatique pour la page 404
+        const countdownElement = document.getElementById('countdown');
+        if (!countdownElement) return; // Si on n'est pas sur la page 404, on sort
+
+        let countdown = 5;
+        const redirectMessage = document.querySelector('.redirect-message');
+
+        const timer = setInterval(function () {
+            countdown--;
+            if (countdownElement) {
+                countdownElement.textContent = countdown;
+            }
+
+            if (countdown <= 0) {
+                clearInterval(timer);
+                window.location.href = 'index.html';
+            }
+        }, 1000);
+
+        // Redirection immédiate si l'utilisateur clique sur le bouton
+        const btn404 = document.querySelector('.btn-404');
+        if (btn404) {
+            btn404.addEventListener('click', function (e) {
+                e.preventDefault();
+                clearInterval(timer);
+                window.location.href = 'index.html';
+            });
+        }
+    }
+
     // Init on DOM ready
     document.addEventListener('DOMContentLoaded', function () {
         initAccordion();
         initCarousel();
         initSiteMenu();
+        initPage404();
     });
 })();

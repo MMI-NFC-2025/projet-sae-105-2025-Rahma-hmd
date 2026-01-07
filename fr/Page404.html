@@ -13,9 +13,9 @@
 </head>
 <body>
     <header>
-        <button class="lang-toggle" aria-label="Changer la langue">
-            <img loading="lazy" src="../assets/img/EN.svg" alt="EN" />
-        </button>
+        <a href="../en/Page404.html" class="lang-toggle" aria-label="Switch to English">
+            <img loading="lazy" src="../assets/img/ENlettre.svg" alt="EN" />
+        </a>
         <div class="logo">
             <a href="index.html">
                 <img loading="lazy" src="../assets/img/logopetit.avif" alt="Logo" class="logo-small" />
@@ -110,6 +110,11 @@
                             <img loading="lazy" src="../assets/img/youtube.avif" alt="YouTube" />
                         </a>
                     </div>
+                    <div class="footer-lang">
+                        <a href="../en/Page404.html" class="lang-link" aria-label="Switch to English">
+                            <img loading="lazy" src="../assets/img/ENlettre.svg" alt="EN" />
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -121,31 +126,6 @@
     </footer>
 
     <script src="../src/js/script.js" defer></script>
-    <script>
-        // Compte à rebours et redirection automatique
-        let countdown = 5;
-        const countdownElement = document.getElementById('countdown');
-        const redirectMessage = document.querySelector('.redirect-message');
-
-        const timer = setInterval(function() {
-            countdown--;
-            if (countdownElement) {
-                countdownElement.textContent = countdown;
-            }
-            
-            if (countdown <= 0) {
-                clearInterval(timer);
-                window.location.href = 'index.html';
-            }
-        }, 1000);
-
-        // Redirection immédiate si l'utilisateur clique sur le bouton
-        document.querySelector('.btn-404')?.addEventListener('click', function(e) {
-            e.preventDefault();
-            clearInterval(timer);
-            window.location.href = 'index.html';
-        });
-    </script>
 </body>
 </html>
 

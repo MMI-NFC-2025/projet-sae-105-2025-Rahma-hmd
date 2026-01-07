@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - The Matilda Effect</title>
+    <link rel="icon" type="image/png" href="../assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="../assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="../assets/favicon/site.webmanifest" />
+    <link rel="stylesheet" href="../src/css/style.css">
+</head>
+<body>
+    <header>
+        <a href="../fr/galerie.html" class="lang-toggle" aria-label="Switch to French">
+            <img loading="lazy" src="../assets/img/FRlettre.svg" alt="FR" />
+        </a>
+        <div class="logo">
+            <a href="index.html">
+                <img loading="lazy" src="../assets/img/logopetit.avif" alt="Logo" class="logo-small" />
+            </a>
+        </div>
+        <button class="menu-toggle" aria-label="Open menu">
+            <img loading="lazy" src="../assets/img/menuliste.svg" alt="Menu" />
+        </button>
+    </header>
+
+    <!-- Off-canvas menu -->
+    <div id="menuOverlay" class="menu-overlay" hidden></div>
+    <nav id="siteMenu" class="offcanvas-menu" aria-hidden="true" aria-label="Main menu">
+        <div class="menu-header">
+            <a href="index.html">
+                <img loading="lazy" src="../assets/img/logopetit.avif" alt="Logo" class="menu-logo" />
+            </a>
+            <button class="menu-close" aria-label="Close menu">✕</button>
+        </div>
+        <ul class="menu-list">
+            <li><a href="index.html">Home</a></li>
+            <li>
+                <button class="menu-accordion" aria-expanded="false" aria-controls="submenu-articles">Articles</button>
+                <ul id="submenu-articles" class="submenu" hidden>
+                    <li><a href="article1.html">Alice Ball, the Forgotten Chemist</a></li>
+                    <li><a href="article2.html">The Ball Method</a></li>
+                    <li><a href="article3.html">Black Women &amp; Science</a></li>
+                </ul>
+            </li>
+            <li><a href="frise.html">Timeline</a></li>
+            <li><a href="galerie.html">Gallery</a></li>
+            <li><a href="glossaire.html">Glossary</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="galerie-page">
+            <h1>GALLERY</h1>
+
+            <img loading="lazy" src="../assets/img/galeriehero.avif" alt="Black and white cinema screens" class="galerie-hero" />
+        </section>
+
+        <section class="galerie-films">
+            <h2>FILMS</h2>
+
+            <article>
+                <h3>THE BALL METHOD (2020)</h3>
+                <p><strong>Director:</strong> Dagmawi Abebe</p>
+                <p>Short film retracing the life of Alice Ball, an African-American chemist who developed the first effective treatment for leprosy. In just six minutes, the film gives this pioneer the recognition she deserves and perfectly illustrates the Matilda Effect.</p>
+                <figure>
+                    <img loading="lazy" src="../assets/img/galerie1.avif" alt="The Ball Method film poster" />
+                    <figcaption>The Ball Method (2020) film poster by Dagmawi Abebe</figcaption>
+                </figure>
+                <p><a href="https://www.amazon.com/Ball-Method-Kiersey-Clemons/dp/B08SWKTDWK" class="btn-film" target="_blank" rel="noopener noreferrer">WATCH THE FILM</a></p>
+                <figure>
+                    <video controls width="100%">
+                        <source src="../assets/video/The Ball Method -Teaser - (A Short film by Dagmawi Abebe).mp4" type="video/mp4">
+                        <p>Your browser does not support video playback. <a href="../assets/video/The Ball Method -Teaser - (A Short film by Dagmawi Abebe).mp4">Download the video</a>.</p>
+                    </video>
+                    <figcaption>The Ball Method short film teaser by Dagmawi Abebe</figcaption>
+                </figure>
+            </article>
+
+            <article>
+                <h3>HIDDEN FIGURES (2016)</h3>
+                <p><strong>Director:</strong> Theodore Melfi</p>
+                <p>Inspired by a true story, the film highlights three African-American NASA mathematicians whose calculations enabled Apollo space missions. A poignant narrative about perseverance and recognition of Black women in the sciences.</p>
+                <figure>
+                    <img loading="lazy" src="../assets/img/galerie2.avif" alt="Hidden Figures film poster" />
+                    <figcaption>Hidden Figures (2016) film poster by Theodore Melfi</figcaption>
+                </figure>
+                <p><a href="https://www.disneyplus.com/fr-fr/browse/entity-bd9d3f07-aefe-4e45-b421-ad2a745c3bb0?distributionPartner=google" class="btn-film" target="_blank" rel="noopener noreferrer">WATCH THE FILM</a></p>
+            </article>
+        </section>
+
+        <section class="galerie-livres">
+            <h2>BOOKS</h2>
+
+            <article>
+                <h3>HISTORY OF LEPERS IN THE MIDDLE AGES: A SOCIETY OF OUTCASTS</h3>
+                <p><strong>Author:</strong> Françoise Bériac</p>
+                <p>Historical study on the marginalization of the sick in medieval society. This book sheds light in parallel on the story of Alice Ball, whose discoveries concerned the same disease but in a context of discrimination and social exclusion.</p>
+                <figure>
+                    <img loading="lazy" src="../assets/img/galerie3.avif" alt="History of Lepers in the Middle Ages book cover" />
+                    <figcaption>History of Lepers in the Middle Ages book cover by Françoise Bériac</figcaption>
+                </figure>
+                <p><a href="https://www.fnac.com/a1075804/Francoise-Beriac-Histoire-des-lepreux-au-moyen-age?NUMERICAL=Y&Origin=fnac_google#FORMAT=ebook%20(ePub)" class="btn-livre" target="_blank" rel="noopener noreferrer">READ THE BOOK</a></p>
+            </article>
+
+            <article>
+                <h3>BOLD! 10 WOMEN WHO MARKED THE SCIENCES</h3>
+                <p><strong>Authors:</strong> Leïla Brient, Romane Colignon, Lucie Croes</p>
+                <p>Ten inspiring portraits of women scientists who changed our vision of the world, including Alice Ball, but also Marie Curie, Katherine Johnson, and Rosalind Franklin. The book shows how their discoveries revolutionized their fields, while highlighting the injustices and omissions related to their gender.</p>
+                <figure>
+                    <img loading="lazy" src="../assets/img/galerie4.avif" alt="Bold! 10 Women Who Marked the Sciences book cover" />
+                    <figcaption>Bold! 10 Women Who Marked the Sciences book cover</figcaption>
+                </figure>
+                <p><a href="https://www.fnac.com/a21136697/Leila-Bessila-Audacieuses" class="btn-livre" target="_blank" rel="noopener noreferrer">READ THE BOOK</a></p>
+            </article>
+        </section>
+
+        <div class="galerie-conclusion">
+            <p>These films and books have one thing in common: they give a voice back to those whom History has silenced. Through cinema and writing, memory becomes an act of justice, a way of saying, finally: they were there.</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-small-logo">
+            <a href="index.html">
+                <img loading="lazy" src="../assets/img/logopetit.avif" alt="Logo" />
+            </a>
+        </div>
+        <div class="footer-grid">
+            <div class="footer-left">
+                <nav class="footer-menu">
+                    <h2>MENU</h2>
+                    <ul>
+                        <li><a href="Page404.html">LEGAL NOTICE</a></li>
+                        <li><a href="Page404.html">ABOUT</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                        <li><a href="Page404.html">OTHER PROJECTS</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="footer-right">
+                <div class="footer-contact">
+                    <h2>CONTACT</h2>
+                    <p>MMI DEPARTMENT</p>
+                    <p>4 PL. LUCIEN THARRADIN</p>
+                    <p>25200 MONTBÉLIARD</p>
+                    <p>03 81 99 47 34</p>
+                </div>
+
+                <div class="footer-social">
+                    <h2>FOLLOW US</h2>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/mmimontbeliard/?locale=fr_FR" class="social-link"
+                            aria-label="Facebook" title="Facebook" target="_blank" rel="noopener noreferrer">
+                            <img loading="lazy" src="../assets/img/facebook.avif" alt="Facebook" />
+                        </a>
+                        <a href="https://www.instagram.com/mmi_montbeliard/" class="social-link" aria-label="Instagram"
+                            title="Instagram" target="_blank" rel="noopener noreferrer">
+                            <img loading="lazy" src="../assets/img/instagram.avif" alt="Instagram" />
+                        </a>
+                        <a href="https://x.com/MMImontbeliard/with_replies" class="social-link" aria-label="Twitter"
+                            title="Twitter" target="_blank" rel="noopener noreferrer">
+                            <img loading="lazy" src="../assets/img/twitter.avif" alt="Twitter" />
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCgW7jR8McJwjxPh0fDQaXGg/videos" class="social-link"
+                            aria-label="YouTube" title="YouTube" target="_blank" rel="noopener noreferrer">
+                            <img loading="lazy" src="../assets/img/youtube.avif" alt="YouTube" />
+                        </a>
+                    </div>
+                    <div class="footer-lang">
+                        <a href="../fr/galerie.html" class="lang-link" aria-label="Switch to French">
+                            <span>FR</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-credits">
+            PROJECT BY HAMDI RAHMA AS PART OF THE MMI BACHELOR'S DEGREE - MARIE ET LOUIS PASTEUR UNIVERSITY © 2025 - THE MATILDA EFFECT
+        </div>
+    </footer>
+
+    <script src="../src/js/script.js" defer></script>
+</body>
+</html>
